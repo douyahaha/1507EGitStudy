@@ -23,12 +23,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        getData();
-//        getArgumentData();
+        getData();
+        getArgumentData();
         getArgumentData2();
     }
 
     private void getArgumentData2() {
+		 //得到Retrofit对象
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(API.baseUrl3)
                 .addConverterFactory(GsonConverterFactory.create())
