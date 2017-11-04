@@ -2,12 +2,14 @@ package com.douya.retrofits;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import com.douya.retrofits.api.API;
 import com.douya.retrofits.bean.Info;
 import com.douya.retrofits.bean.News;
 import com.douya.retrofits.bean.User;
 import com.douya.retrofits.inter.RetrofitService;
+import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
 import java.util.List;
 
@@ -26,6 +28,16 @@ public class MainActivity extends AppCompatActivity {
         getData();
         getArgumentData();
         getArgumentData2();
+        SlidingMenu slidingMenu = new SlidingMenu(this);
+        slidingMenu.setMode(slidingMenu.LEFT);
+        slidingMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+        slidingMenu.setBehindOffset(170);
+        slidingMenu.setFadeDegree(1f);
+        slidingMenu.attachToActivity(this, slidingMenu.SLIDING_CONTENT);
+
+        //加载布局
+        View view = View.inflate(MainActivity.this, R.layout.leftitem, null);
+        slidingMenu.setMenu(view);
     }
 
     private void getArgumentData2() {

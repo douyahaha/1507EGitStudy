@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/RetrofitStudy.iml" filepath="$PROJECT_DIR$/RetrofitStudy.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.douya.retrofit/com.douya.retrofit.iml" filepath="$PROJECT_DIR$/com.douya.retrofit/com.douya.retrofit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/slindingmenu/slindingmenu.iml" filepath="$PROJECT_DIR$/slindingmenu/slindingmenu.iml" />
     </modules>
   </component>
 </project>
